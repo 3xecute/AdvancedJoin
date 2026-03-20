@@ -1,0 +1,161 @@
+# AdvancedJoin - Türkçe Dil Dosyası
+# Yazar: execute
+
+prefix: "&#00ff88&lAdvancedJoin &8»&r "
+
+# Genel
+no-permission: "%prefix%&cBunu yapmak için izniniz yok."
+player-only: "%prefix%&cBu komut yalnızca oyuncular tarafından kullanılabilir."
+unknown-error: "%prefix%&cBeklenmeyen bir hata oluştu. Lütfen tekrar deneyin."
+
+# Giriş sistemi
+join:
+  default-message: "&#00ff88[+] &f%player%"
+  broadcast: true
+
+# Oyuncu verisi
+data:
+  loaded: "%prefix%&aTercihleriniz yüklendi."
+  saved: "%prefix%&aTercihleriniz kaydedildi."
+  error-load: "%prefix%&cVerileriniz yüklenemedi. Varsayılan ayarlar kullanılıyor."
+  error-save: "%prefix%&cVerileriniz kaydedilemedi."
+
+# Menü – Genel
+menu:
+  main-title: "&#00ff88&lAdvancedJoin"
+  messages-title: "&#00ff88&lGiriş Mesajları"
+  category-title: "&#00ff88&l%category%"
+  sounds-title: "&#00ff88&lGiriş Sesleri"
+  particles-title: "&#00ff88&lGiriş Partikülleri"
+  settings-title: "&#00ff88&lAyarlar"
+
+  back-name: "&cGeri"
+  back-lore:
+    - "&7Geri dönmek için tıklayın."
+
+  close-name: "&cKapat"
+  close-lore:
+    - "&7Menüyü kapatmak için tıklayın."
+
+# Menü – Ana öğeler
+menu-main:
+  messages-name: "&#00ff88&lGiriş Mesajları"
+  messages-lore:
+    - "&7Giriş mesajınızı özelleştirin."
+    - "&7Birden fazla kategori arasından seçin."
+    - ""
+    - "&eAçmak için tıklayın."
+
+  sounds-name: "&#00ff88&lGiriş Sesleri"
+  sounds-lore:
+    - "&7Sunucuya girdiğinizde çalacak"
+    - "&7sesi seçin."
+    - ""
+    - "&eAçmak için tıklayın."
+
+  particles-name: "&#00ff88&lGiriş Partikülleri"
+  particles-lore:
+    - "&7Girişte etrafınızda oluşacak"
+    - "&7partikül efektini seçin."
+    - ""
+    - "&eAçmak için tıklayın."
+
+  settings-name: "&#00ff88&lAyarlar"
+  settings-lore:
+    - "&7Özellikleri açın veya kapatın."
+    - "&7Mevcut seçimlerinizi görün."
+    - ""
+    - "&eAçmak için tıklayın."
+
+# Menü – Mesajlar
+menu-messages:
+  selected-indicator: "&#00ff88✔ &aSeçili"
+  vip-required: "&6⭐ VIP Gerekli"
+  click-select: "&eSeçmek için tıklayın."
+  current-prefix: "&7Mevcut: "
+
+# Menü – Sesler
+menu-sounds:
+  selected-indicator: "&#00ff88✔ &aSeçili"
+  click-select: "&eSeçmek için tıklayın."
+  preview: "&eSes önizleme için sağ tıklayın."
+
+# Menü – Partiküller
+menu-particles:
+  selected-indicator: "&#00ff88✔ &aSeçili"
+  click-select: "&eSeçmek için tıklayın."
+
+# Menü – Ayarlar
+menu-settings:
+  toggle-message-name: "&fGiriş Mesajı"
+  toggle-message-lore:
+    - "&7Giriş mesajınızı açın/kapatın."
+    - ""
+    - "&7Durum: %status%"
+    - ""
+    - "&eDeğiştirmek için tıklayın."
+
+  toggle-sound-name: "&fGiriş Sesi"
+  toggle-sound-lore:
+    - "&7Giriş sesinizi açın/kapatın."
+    - ""
+    - "&7Durum: %status%"
+    - ""
+    - "&eDeğiştirmek için tıklayın."
+
+  toggle-particle-name: "&fGiriş Partikülleri"
+  toggle-particle-lore:
+    - "&7Giriş partikülünüzü açın/kapatın."
+    - ""
+    - "&7Durum: %status%"
+    - ""
+    - "&eDeğiştirmek için tıklayın."
+
+  toggle-animation-name: "&fGiriş Animasyonu"
+  toggle-animation-lore:
+    - "&7Giriş animasyonunuzu açın/kapatın."
+    - ""
+    - "&7Durum: %status%"
+    - ""
+    - "&eDeğiştirmek için tıklayın."
+
+  status-on: "&#00ff88AÇIK"
+  status-off: "&cKAPALI"
+
+  info-name: "&#00ff88&lMevcut Ayarlar"
+  info-lore:
+    - "&7Mesaj: &f%message%"
+    - "&7Ses: &f%sound%"
+    - "&7Partikül: &f%particle%"
+    - "&7Animasyon: &f%animation%"
+
+# Toggle geri bildirimleri
+toggle:
+  message-on: "%prefix%&aGiriş mesajı &faktif&a edildi."
+  message-off: "%prefix%&cGiriş mesajı &fdevre dışı&c bırakıldı."
+  sound-on: "%prefix%&aGiriş sesi &faktif&a edildi."
+  sound-off: "%prefix%&cGiriş sesi &fdevre dışı&c bırakıldı."
+  particle-on: "%prefix%&aGiriş partikülleri &faktif&a edildi."
+  particle-off: "%prefix%&cGiriş partikülleri &fdevre dışı&c bırakıldı."
+  animation-on: "%prefix%&aGiriş animasyonu &faktif&a edildi."
+  animation-off: "%prefix%&cGiriş animasyonu &fdevre dışı&c bırakıldı."
+
+# Seçim geri bildirimleri
+select:
+  message: "%prefix%&aGiriş mesajı &f%value% &aolarak ayarlandı."
+  sound: "%prefix%&aGiriş sesi &f%value% &aolarak ayarlandı."
+  particle: "%prefix%&aGiriş partikülleri &f%value% &aolarak ayarlandı."
+
+# Çıkış sistemi
+quit:
+  default-message: "&8[&c-&8] &7%player% &8sunucudan ayrıldı."
+
+# İlk giriş
+join:
+  first-join-message: "&#00ff88&l★ &f%player% &ailk kez katıldı! Hoş geldin!"
+  streak-message: "&#00ff88Tekrar hoş geldin! Giriş seriniz &f%streak% &agün."
+
+# Seçim
+select:
+  animation: "%prefix%&aAnimasyon &f%value% &aolarak ayarlandı."
+  quit: "%prefix%&aCıkış mesajı &f%value% &aolarak ayarlandı."

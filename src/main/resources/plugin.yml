@@ -1,0 +1,23 @@
+name: AdvancedJoin
+version: '${project.version}'
+main: dev.execute.advancedjoin.AdvancedJoin
+api-version: '1.21'
+description: Premium join customization plugin
+author: execute
+
+permissions:
+  advancedjoin.use:
+    description: Allows players to use /ajoin
+    default: true
+  advancedjoin.vip:
+    description: Unlocks VIP messages, animations and particles
+    default: false
+  advancedjoin.admin:
+    description: Full admin access
+    default: op
+
+commands:
+  ajoin:
+    description: Open the AdvancedJoin menu
+    usage: /ajoin
+    permission: advancedjoin.use

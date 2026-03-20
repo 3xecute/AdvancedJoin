@@ -1,0 +1,225 @@
+# AdvancedJoin Configuration
+# Author: execute
+
+language: en
+
+# Join cooldown in seconds (prevents animation spam on rapid rejoin)
+join-cooldown-seconds: 3
+
+defaults:
+  message: "default"
+  sound: "levelup"
+  sound-volume: 1.0
+  sound-pitch: 1.0
+  particle: "heart"
+  animation: "NONE"
+
+categories:
+  DARK:
+    icon: INK_SAC
+    color: "#2c2c2c"
+    messages:
+      - id: dark_1
+        text: "&8[&7+&8] &7%player% &8emerged from the shadows."
+      - id: dark_2
+        text: "&8» &7The darkness welcomes &f%player%&8."
+      - id: dark_3
+        text: "&8[&c!&8] &7%player% &8has returned."
+
+  FUN:
+    icon: SLIME_BALL
+    color: "#ffdd00"
+    messages:
+      - id: fun_1
+        text: "&e%player% &6just dropped in! Literally."
+      - id: fun_2
+        text: "&6✦ &e%player% &6has entered the chat. Hide your cookies."
+      - id: fun_3
+        text: "&e[+] &6%player% &ejoined. The party can start now!"
+
+  SCIENCE:
+    icon: RECOVERY_COMPASS
+    color: "#00ccff"
+    messages:
+      - id: science_1
+        text: "&b[SYS] &3Entity &f%player% &3has connected to the network."
+      - id: science_2
+        text: "&3» &bInitializing player &f%player%&b... Done."
+      - id: science_3
+        text: "&b⚡ &3Signal detected: &f%player% &3is online."
+
+  SURPRISED:
+    icon: WIND_CHARGE
+    color: "#ff6600"
+    messages:
+      - id: surprised_1
+        text: "&6⚡ &eWoah! &f%player% &ejust appeared out of nowhere!"
+      - id: surprised_2
+        text: "&e[!!!] &f%player% &ehas arrived. Everyone, look!"
+      - id: surprised_3
+        text: "&6✦ &eSurprise! &f%player% &eis here!"
+
+  CURIOUS:
+    icon: SPYGLASS
+    color: "#cc88ff"
+    messages:
+      - id: curious_1
+        text: "&d? &5Who could that be... it's &f%player%&5!"
+      - id: curious_2
+        text: "&5» &dHmm, &f%player% &dhas joined. Interesting..."
+      - id: curious_3
+        text: "&d[~] &5Something stirred... &f%player% &5appeared."
+
+quit-messages:
+  quit_1: "&8[&c-&8] &7%player% &8left the server."
+  quit_2: "&8» &7%player% &8disconnected."
+  quit_3: "&c%player% &7vanished into the shadows."
+  quit_4: "&7Goodbye, &f%player%&7. See you next time!"
+
+sounds:
+  - id: levelup
+    sound: ENTITY_PLAYER_LEVELUP
+    description: "Level Up"
+  - id: pling
+    sound: BLOCK_NOTE_BLOCK_PLING
+    description: "Note Pling"
+  - id: bell
+    sound: BLOCK_BELL_USE
+    description: "Bell Ring"
+  - id: chime
+    sound: BLOCK_NOTE_BLOCK_CHIME
+    description: "Chime"
+  - id: enderman
+    sound: ENTITY_ENDERMAN_TELEPORT
+    description: "Teleport"
+  - id: none
+    sound: NONE
+    description: "No Sound"
+
+particles:
+  - id: heart
+    type: HEART
+    count: 10
+    description: "Hearts"
+  - id: flame
+    type: FLAME
+    count: 15
+    description: "Flames"
+  - id: portal
+    type: PORTAL
+    count: 20
+    description: "Portal"
+  - id: happy_villager
+    type: HAPPY_VILLAGER
+    count: 12
+    description: "Happy Dust"
+  - id: end_rod
+    type: END_ROD
+    count: 10
+    description: "End Rods"
+  - id: none
+    type: NONE
+    count: 0
+    description: "No Particle"
+
+animations:
+  - id: NONE
+    description: "No Animation"
+    speed: 1
+  - id: TYPEWRITER
+    description: "Typewriter"
+    speed: 2
+  - id: GRADIENT_FLOW
+    description: "Gradient Flow"
+    speed: 3
+  - id: PULSE
+    description: "Pulse"
+    speed: 2
+
+database:
+  type: sqlite
+  file: advancedjoin.db
+  # MySQL settings (set type: mysql to use)
+  host: localhost
+  port: 3306
+  name: advancedjoin
+  username: root
+  password: ""
+
+vip:
+  messages:
+    - id: vip_1
+      text: "&#FFD700&l✦ &eVIP &f%player% &#FFD700&lhas arrived&e!"
+      vip: true
+    - id: vip_2
+      text: "&#FF6600&l★ &6The legendary &f%player% &#FF6600&ljoins the realm&6!"
+      vip: true
+    - id: vip_3
+      text: "&#FFD700&l⚡ %player% ⚡ &eenters in style! &8[Streak: &6%streak%&8]"
+      vip: true
+  default-animation: GRADIENT_FLOW
+  default-particle: end_rod
+  badge: "&#FFD700&l[VIP] "
+
+# ─── Welcome Screen ───────────────────────────────────────────────────────────
+welcome-screen:
+  enabled: true
+  # Type: BOOK or SIGN
+  type: BOOK
+  # Show only on first join or every join
+  first-join-only: false
+  book:
+    title: "Welcome!"
+    author: "Server"
+    pages:
+      - "&#00ff88&lWelcome to the Server!\n\n&fHello &a%player%&f!\n\nEnjoy your stay.\n\n&7Type /help to get started."
+      - "&7&lServer Rules:\n\n&f1. Be respectful.\n2. No cheating.\n3. Have fun!"
+  sign:
+    lines:
+      - "&#00ff88Welcome!"
+      - "&f%player%"
+      - "&7to the server"
+      - ""
+
+# ─── Join Title ───────────────────────────────────────────────────────────────
+join-title:
+  enabled: true
+  # Show only on first join or every join
+  first-join-only: false
+  title: "&#00ff88&lWelcome"
+  subtitle: "&7Hello, &f%player%&7!"
+  fade-in: 10
+  stay: 40
+  fade-out: 10
+  # First join specific title
+  first-join:
+    title: "&#FFD700&l⭐ First Join!"
+    subtitle: "&eWelcome to the server, &f%player%&e!"
+
+# ─── Auto Commands ────────────────────────────────────────────────────────────
+join-commands:
+  enabled: true
+  # Use %player% for player name
+  # Prefix with 'console:' to run as console, default runs as player
+  commands: []
+  # Example:
+  # commands:
+  #   - "console: give %player% bread 1"
+  #   - "spawn"
+
+# First join specific commands
+first-join-commands:
+  enabled: true
+  commands: []
+  # Example:
+  # commands:
+  #   - "console: give %player% diamond 1"
+  #   - "kit starter"
+
+# ─── Conditional Welcome ──────────────────────────────────────────────────────
+conditional-welcome:
+  enabled: true
+  returning-player:
+    message: "&#00ff88Welcome back, &f%player%&a! Your streak: &f%streak% &adays."
+    title: "&#00ff88Welcome Back!"
+    subtitle: "&7Streak: &f%streak% &7days"

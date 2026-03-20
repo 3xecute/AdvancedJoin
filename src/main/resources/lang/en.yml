@@ -1,0 +1,161 @@
+# AdvancedJoin - English Language File
+# Author: execute
+
+prefix: "&#00ff88&lAdvancedJoin &8»&r "
+
+# General
+no-permission: "%prefix%&cYou don't have permission to do that."
+player-only: "%prefix%&cThis command can only be used by players."
+unknown-error: "%prefix%&cAn unexpected error occurred. Please try again."
+
+# Join system
+join:
+  default-message: "&#00ff88[+] &f%player%"
+  broadcast: true
+
+# Player data
+data:
+  loaded: "%prefix%&aYour preferences have been loaded."
+  saved: "%prefix%&aYour preferences have been saved."
+  error-load: "%prefix%&cFailed to load your data. Using defaults."
+  error-save: "%prefix%&cFailed to save your data."
+
+# Menu – General
+menu:
+  main-title: "&#00ff88&lAdvancedJoin"
+  messages-title: "&#00ff88&lJoin Messages"
+  category-title: "&#00ff88&l%category%"
+  sounds-title: "&#00ff88&lJoin Sounds"
+  particles-title: "&#00ff88&lJoin Particles"
+  settings-title: "&#00ff88&lSettings"
+
+  back-name: "&cBack"
+  back-lore:
+    - "&7Click to go back."
+
+  close-name: "&cClose"
+  close-lore:
+    - "&7Click to close the menu."
+
+# Menu – Main items
+menu-main:
+  messages-name: "&#00ff88&lJoin Messages"
+  messages-lore:
+    - "&7Customize your join message."
+    - "&7Choose from multiple categories."
+    - ""
+    - "&eClick to open."
+
+  sounds-name: "&#00ff88&lJoin Sounds"
+  sounds-lore:
+    - "&7Choose the sound that plays"
+    - "&7when you join the server."
+    - ""
+    - "&eClick to open."
+
+  particles-name: "&#00ff88&lJoin Particles"
+  particles-lore:
+    - "&7Select a particle effect"
+    - "&7that spawns around you on join."
+    - ""
+    - "&eClick to open."
+
+  settings-name: "&#00ff88&lSettings"
+  settings-lore:
+    - "&7Toggle features on or off."
+    - "&7View your current selections."
+    - ""
+    - "&eClick to open."
+
+# Menu – Messages
+menu-messages:
+  selected-indicator: "&#00ff88✔ &aSelected"
+  vip-required: "&6⭐ VIP Required"
+  click-select: "&eClick to select."
+  current-prefix: "&7Current: "
+
+# Menu – Sounds
+menu-sounds:
+  selected-indicator: "&#00ff88✔ &aSelected"
+  click-select: "&eClick to select."
+  preview: "&eRight-click to preview."
+
+# Menu – Particles
+menu-particles:
+  selected-indicator: "&#00ff88✔ &aSelected"
+  click-select: "&eClick to select."
+
+# Menu – Settings
+menu-settings:
+  toggle-message-name: "&fJoin Message"
+  toggle-message-lore:
+    - "&7Toggle your join message."
+    - ""
+    - "&7Status: %status%"
+    - ""
+    - "&eClick to toggle."
+
+  toggle-sound-name: "&fJoin Sound"
+  toggle-sound-lore:
+    - "&7Toggle your join sound."
+    - ""
+    - "&7Status: %status%"
+    - ""
+    - "&eClick to toggle."
+
+  toggle-particle-name: "&fJoin Particle"
+  toggle-particle-lore:
+    - "&7Toggle your join particle."
+    - ""
+    - "&7Status: %status%"
+    - ""
+    - "&eClick to toggle."
+
+  toggle-animation-name: "&fJoin Animation"
+  toggle-animation-lore:
+    - "&7Toggle your join animation."
+    - ""
+    - "&7Status: %status%"
+    - ""
+    - "&eClick to toggle."
+
+  status-on: "&#00ff88ON"
+  status-off: "&cOFF"
+
+  info-name: "&#00ff88&lCurrent Settings"
+  info-lore:
+    - "&7Message: &f%message%"
+    - "&7Sound: &f%sound%"
+    - "&7Particle: &f%particle%"
+    - "&7Animation: &f%animation%"
+
+# Toggles feedback
+toggle:
+  message-on: "%prefix%&aJoin message &fenabled&a."
+  message-off: "%prefix%&cJoin message &fdisabled&c."
+  sound-on: "%prefix%&aJoin sound &fenabled&a."
+  sound-off: "%prefix%&cJoin sound &fdisabled&c."
+  particle-on: "%prefix%&aJoin particle &fenabled&a."
+  particle-off: "%prefix%&cJoin particle &fdisabled&c."
+  animation-on: "%prefix%&aJoin animation &fenabled&a."
+  animation-off: "%prefix%&cJoin animation &fdisabled&c."
+
+# Selection feedback
+select:
+  message: "%prefix%&aJoin message set to &f%value%&a."
+  sound: "%prefix%&aJoin sound set to &f%value%&a."
+  particle: "%prefix%&aJoin particle set to &f%value%&a."
+
+# Quit system
+quit:
+  default-message: "&8[&c-&8] &7%player% &8left the server."
+
+# First join
+join:
+  first-join-message: "&#00ff88&l★ &f%player% &ajoined for the first time! Welcome!"
+  streak-message: "&#00ff88Welcome back! Your login streak is &f%streak% &adays."
+
+# Select
+select:
+  animation: "%prefix%&aAnimation set to &f%value%&a."
+  quit: "%prefix%&aQuit message set to &f%value%&a."
